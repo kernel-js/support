@@ -6,8 +6,7 @@ import {isObject, omitBy, isEmpty} from "./index";
  * @param   {object} value
  * @returns {*}
  */
-function removeEmpty(value)
-{
+const removeEmpty = (value) => {
   if (!isObject(value)) {
     return value;
   }
@@ -15,4 +14,4 @@ function removeEmpty(value)
   return omitBy(value, isEmpty);
 }
 
-module.exports = removeEmpty;
+export default removeEmpty;

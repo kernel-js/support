@@ -6,8 +6,7 @@ import {isObject, mapValues, isEmpty} from "./index";
  * @param   {object} value
  * @returns {*}
  */
-function mapEmptyToNull(value)
-{
+const mapEmptyToNull = (value) => {
   if (!isObject(value)) {
     return value;
   }
@@ -17,4 +16,4 @@ function mapEmptyToNull(value)
   });
 }
 
-module.exports = mapEmptyToNull;
+export default mapEmptyToNull;

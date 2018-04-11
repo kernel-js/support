@@ -1,5 +1,3 @@
-import {get} from "../../Helpers/index";
-
 /**
  * Gets the value at `path` of `object`. If the resolved value is
  * `undefined`, the `defaultValue` is returned in its place.
@@ -21,5 +19,5 @@ import {get} from "../../Helpers/index";
  * // => 'default'
  */
 module.exports = function getIn(path, defaultValue = null) {
-  return get(this.items, path, defaultValue);
+  return require('lodash/get')(this.items, path, defaultValue);
 };

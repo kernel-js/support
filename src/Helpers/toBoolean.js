@@ -25,7 +25,7 @@
  * toBoolean('y');
  * // => true
  */
-function toBoolean(value) {
+const toBoolean = (value) => {
   if (value === true || value === false) {
     return value;
   }
@@ -45,4 +45,4 @@ function toBoolean(value) {
   return null;
 }
 
-module.exports = toBoolean;
+export default toBoolean;

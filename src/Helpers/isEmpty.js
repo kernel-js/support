@@ -35,7 +35,7 @@ const isEmptyLodash = require('lodash/isEmpty');
  * isEmpty({ 'a': 1 });
  * // => false
  */
-function isEmpty(value) {
+const isEmpty = (value) => {
   if (value == null || value === undefined) {
     return true;
   }
@@ -63,4 +63,4 @@ function isEmpty(value) {
   return isEmptyLodash(value);
 }
 
-module.exports = isEmpty;
+export default isEmpty;

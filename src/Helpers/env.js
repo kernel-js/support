@@ -7,7 +7,7 @@ import {get} from "./index";
  * @param   {*}       defaultValue
  * @returns {*}
  */
-function env(key, defaultValue = null) {
+const env = (key, defaultValue = null) => {
   if (typeof process === 'undefined' || typeof process.env === 'undefined') {
     return defaultValue;
   }
@@ -15,4 +15,4 @@ function env(key, defaultValue = null) {
   return get(process.env, key, defaultValue);
 }
 
-module.exports = env;
+export default env;

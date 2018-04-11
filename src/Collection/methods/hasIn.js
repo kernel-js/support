@@ -1,5 +1,3 @@
-import {hasIn as hasInPath} from "../../Helpers/index";
-
 /**
  * Checks if `path` is a direct or inherited property of `object`.
  *
@@ -22,5 +20,5 @@ import {hasIn as hasInPath} from "../../Helpers/index";
  * // => false
  */
 module.exports = function hasIn(path) {
-  return hasInPath(this.items, path);
+  return require('lodash/hasIn')(this.items, path);
 };
