@@ -1,0 +1,67 @@
+{
+  "name": "@kernel-js/support",
+  "version": "1.3.0",
+  "description": "Support package for Kernel Framework",
+  "main": "./dist/index.js",
+  "module": "./es6/index.js",
+  "scripts": {
+    "test": "cross-env BABEL_ENV=test mocha --require babel-core/register --recursive",
+    "clean": "rimraf dist es6",
+    "build": "npm run clean && npm run build:cjs && npm run build:es6",
+    "build:cjs": "mkdir -p dist && cross-env BABEL_ENV=cjs babel src --out-dir dist/",
+    "build:es6": "mkdir -p es6 && cross-env BABEL_ENV=es6 babel src --out-dir es6/",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kernel-js/support.git"
+  },
+  "keywords": [
+    "kernel",
+    "framework",
+    "helper",
+    "collections",
+    "collection",
+    "collect",
+    "map",
+    "filter",
+    "group by",
+    "reduce",
+    "transform",
+    "pluck",
+    "pie",
+    "mapWithKeys",
+    "laravel",
+    "whereIn",
+    "values",
+    "unique",
+    "lodash",
+    "date",
+    "datetime"
+  ],
+  "author": "Gus <gus@brid-it.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kernel-js/support/issues"
+  },
+  "homepage": "https://github.com/kernel-js/support",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-builtin-extend": "^1.1.2",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "cross-env": "^5.1.4",
+    "mocha": "^5.0.4",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "collect.js": "^4.0.14",
+    "lodash": "^4.17.5",
+    "luxon": "^1.0.0"
+  }
+}

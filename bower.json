@@ -1,0 +1,38 @@
+{
+  "name": "@kernel/support",
+  "description": "Service Container and Service Provider for Kernel Framework",
+  "main": "dist/index.js",
+  "author": "Gus <gus@brid-it.com>",
+  "license": "MIT",
+  "keywords": [
+    "kernel",
+    "framework",
+    "helper",
+    "collections",
+    "collection",
+    "collect",
+    "map",
+    "filter",
+    "group by",
+    "reduce",
+    "transform",
+    "pluck",
+    "pie",
+    "mapWithKeys",
+    "laravel",
+    "whereIn",
+    "values",
+    "unique",
+    "lodash",
+    "date",
+    "datetime"
+  ],
+  "homepage": "https://github.com/kernel-js/support",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
