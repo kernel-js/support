@@ -4,12 +4,11 @@
  * @param   {*} value
  * @returns {boolean}
  */
-function isArray(value)
-{
+const isArray = (value) => {
   return (
     Array.isArray(value) === true &&
     Object.prototype.toString.call(value) === '[object Array]'
   );
 }
 
-module.exports = isArray;
+export default isArray;

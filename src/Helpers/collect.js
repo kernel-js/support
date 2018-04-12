@@ -4,8 +4,8 @@
  * @param   {*} value
  * @returns Collection
  */
-function collect(value = []) {
+const collect = (value = []) => {
   return new (require('../Collection/Collection'))(value);
 }
 
-module.exports = collect;
+export default collect;

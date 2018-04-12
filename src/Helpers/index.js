@@ -21,15 +21,15 @@ const omitBy = require('lodash/omitBy');
 /*----------------------------------------------
  *                    Kernel
  *---------------------------------------------- */
-const env = require('./env');
-const collect = require('./collect');
-const isArray = require('./isArray');
-const isObject = require('./isObject');
-const isEmpty = require('./isEmpty');
-const isNotEmpty = require('./isNotEmpty');
-const toBoolean = require('./toBoolean');
-const removeEmpty = require('./removeEmpty');
-const mapEmptyToNull = require('./mapEmptyToNull');
+import env from './env';
+import collect from './collect';
+import isArray from './isArray';
+import isObject from './isObject';
+import isEmpty from './isEmpty';
+import isNotEmpty from './isNotEmpty';
+import toBoolean from './toBoolean';
+import removeEmpty from './removeEmpty';
+import mapEmptyToNull from './mapEmptyToNull';
 
 export {
   camelCase,

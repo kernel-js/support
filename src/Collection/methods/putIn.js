@@ -1,5 +1,3 @@
-import {set} from "../../Helpers/index";
-
 /**
  * Sets the value at `path` of `object`. If a portion of `path` doesn't exist,
  * it's created. Arrays are created for missing index properties while objects
@@ -24,6 +22,6 @@ import {set} from "../../Helpers/index";
  * // => 5
  */
 module.exports = function putIn(path, value) {
-  set(this.items, path, value);
+  require('lodash/set')(this.items, path, value);
 };
 

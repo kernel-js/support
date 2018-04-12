@@ -6,9 +6,8 @@ import isEmpty from "./isEmpty";
  * @param   {*} value
  * @returns {boolean}
  */
-function isNotEmpty(value)
-{
+const isNotEmpty = (value) => {
   return !isEmpty(value);
 }
 
-module.exports = isNotEmpty;
+export default isNotEmpty;
