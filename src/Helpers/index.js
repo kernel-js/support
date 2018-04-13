@@ -17,6 +17,7 @@ const startCase = require('lodash/startCase');
 const map = require('lodash/map');
 const mapValues = require('lodash/mapValues');
 const omitBy = require('lodash/omitBy');
+const unset = require('lodash/unset');
 
 /*----------------------------------------------
  *                    Kernel
@@ -48,6 +49,7 @@ export {
   map,
   mapValues,
   omitBy,
+  unset,
 
   env,
   collect,

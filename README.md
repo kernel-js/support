@@ -58,6 +58,7 @@ tested on a day-to-day basis. The idea is not to reinvent the wheel, just join t
 * map
 * mapValues
 * omitBy
+* unset
 
 <br />
 <a name="env" /></a>
