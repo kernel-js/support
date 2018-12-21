@@ -20,9 +20,6 @@
     "kernel",
     "framework",
     "helper",
-    "collections",
-    "collection",
-    "collect",
     "map",
     "filter",
     "group by",
@@ -35,9 +32,7 @@
     "whereIn",
     "values",
     "unique",
-    "lodash",
-    "date",
-    "datetime"
+    "lodash"
   ],
   "author": "Gus <gus@brid-it.com>",
   "license": "MIT",
@@ -56,12 +51,10 @@
     "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
     "cross-env": "^5.1.4",
-    "mocha": "^5.1.0",
+    "mocha": "^5.2.0",
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "collect.js": "^4.0.14",
-    "lodash": "^4.17.5",
-    "luxon": "^1.0.0"
+    "lodash": "^4.17.5"
   }
 }
