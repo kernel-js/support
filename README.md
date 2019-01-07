@@ -7,10 +7,6 @@
 
 * Expose some [Lodash](https://www.npmjs.com/package/lodash) functions
 * Exports additional helpers
-* Offers a Collection for working with arrays and objects, powered by [collect.js](https://www.npmjs.com/package/collect.js).
-All credits to them. I just added some methods to work with `has`, `get` and `put` on nested objects (`hasIn`, `getIn` and `putIn`).
-* Incredible DateTime powered by [Luxon](https://www.npmjs.com/package/luxon) for working with dates and times.
-* WIP - Browser detection and features based fingerprint
 
 ## Inspirations
 
@@ -31,7 +27,6 @@ tested on a day-to-day basis. The idea is not to reinvent the wheel, just join t
 ### Custom
 
 * [env](#env)
-* [collect](#collect)
 * [isArray](#isArray)
 * [isObject](#isObject)
 * [isEmpty](#isEmpty)
@@ -79,26 +74,6 @@ __Arguments__
 env('NODE_ENV');
 env('app.name');
 env('app.name', 'My Default App Name');
-```
-
----------------------------------------
-
-<a name="collect" /></a>
-
-### collect
-
-Give you a Collection with the informed data. See [collect.js](https://www.npmjs.com/package/collect.js) docs.
-
-	collect(data)
-
-__Arguments__
-
-* `data` - the object or array to create collection with
-
-```js
-// Example
-collect([1, 2, 3]);
-collect({"a": "a value", "b": "b value"});
 ```
 
 ---------------------------------------
@@ -259,7 +234,7 @@ mapEmptyToNull({"a": " ", "b": "b value", "c": null, "d": {}}); // {"a": null, "
 
 ## Authors
 
-This library was developed by Gustavo Siqueira
+This library was developed by Gustavo Siqueira, Bruno Santos e Carlos Escouto
 
 ## Contribute
 
