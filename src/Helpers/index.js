@@ -23,7 +23,6 @@ const unset = require('lodash/unset');
  *                    Kernel
  *---------------------------------------------- */
 import env from './env';
-import collect from './collect';
 import isArray from './isArray';
 import isObject from './isObject';
 import isEmpty from './isEmpty';
@@ -50,9 +49,7 @@ export {
   mapValues,
   omitBy,
   unset,
-
   env,
-  collect,
   isArray,
   isObject,
   isEmpty,
