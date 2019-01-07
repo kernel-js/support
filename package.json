@@ -1,6 +1,6 @@
 {
   "name": "@kernel-js/support",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "Support package for Kernel Framework",
   "main": "./dist/index.js",
   "module": "./es6/index.js",
