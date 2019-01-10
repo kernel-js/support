@@ -8,9 +8,6 @@
     "kernel",
     "framework",
     "helper",
-    "collections",
-    "collection",
-    "collect",
     "map",
     "filter",
     "group by",
@@ -24,8 +21,7 @@
     "values",
     "unique",
     "lodash",
-    "date",
-    "datetime"
+    "crypto"
   ],
   "homepage": "https://github.com/kernel-js/support",
   "ignore": [

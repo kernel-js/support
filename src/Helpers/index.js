@@ -30,6 +30,7 @@ import isNotEmpty from './isNotEmpty';
 import toBoolean from './toBoolean';
 import removeEmpty from './removeEmpty';
 import mapEmptyToNull from './mapEmptyToNull';
+import { encrypt, decrypt, encryptWithHmac, decryptWithHmac, encryptWithTSValidation, decryptWithTSValidation } from './crypto';
 
 export {
   camelCase,
@@ -57,4 +58,10 @@ export {
   toBoolean,
   removeEmpty,
   mapEmptyToNull,
+  encrypt,
+  decrypt,
+  encryptWithHmac,
+  decryptWithHmac,
+  encryptWithTSValidation,
+  decryptWithTSValidation,
 }
